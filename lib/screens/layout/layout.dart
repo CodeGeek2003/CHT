@@ -5,8 +5,7 @@ import '../../theme/colors.dart';
 import 'followup.dart';
 import 'home.dart';
 import 'login.dart';
-
-
+import 'sos.dart';
 class Layout extends StatefulWidget {
   const Layout({Key? key}) : super(key: key);
 
@@ -50,9 +49,14 @@ class _LayoutState extends State<Layout> {
             ),
             ListTile(
               title: Text('Log Out'),
-              onTap: () {
-                Navigator.pushNamed(context, login());
-              },
+                onTap: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => login()),
+                        (route) => false,
+                  );
+                },
+
             ),
           ],
         ),
