@@ -2,10 +2,9 @@ import 'package:cht2/screens/layout/sos.dart';
 import 'package:flutter/material.dart';
 
 import '../../theme/colors.dart';
-import 'doctor.dart';
 import 'followup.dart';
 import 'home.dart';
-
+import 'login.dart';
 
 
 class Layout extends StatefulWidget {
@@ -25,6 +24,7 @@ class _LayoutState extends State<Layout> {
       _selectedIndex = index;
     });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class _LayoutState extends State<Layout> {
             ListTile(
               title: Text('Log Out'),
               onTap: () {
-                // TODO: Log out functionality
+                Navigator.pushNamed(context, login());
               },
             ),
           ],
