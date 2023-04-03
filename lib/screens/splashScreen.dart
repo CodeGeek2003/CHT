@@ -29,11 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Image.network(//logo image
-                'https://th.bing.com/th/id/R.ba1ca3bb07a2608fa4f6a985c5a19325?rik=CkrDHLOvv4eH1A&riu=http%3a%2f%2f3.bp.blogspot.com%2f-fdquRzOA5Ww%2fUgJzc27SGvI%2fAAAAAAAADdY%2fTOMmWdDGVVI%2fs1600%2fmedical%2bred%2bcross%2b1.jpg&ehk=cSpm6VspMBp92%2fmHR%2fyMffik3E3ZePaYnDWEdzbt%2b%2fU%3d&risl=&pid=ImgRaw&r=0', // Replace with your own image URL
-                height: 150,
-                width: 150,
-              ),
+              Image.asset("assets/images/splach_logo.png"),
               SizedBox(height: 20),
               Text(
                 'Chronic Health Tracker',
